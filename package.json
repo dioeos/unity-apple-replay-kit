@@ -1,0 +1,10 @@
+{
+  "name": "com.dioeos.unityapplereplaykit",
+  "version": "0.1.0",
+  "displayName": "Unity Apple Replay Kit",
+  "description": "A minimal Unity package to interact with the Apple Replay Kit",
+  "unity": "2022.3",
+  "author": {
+    "name": "Dioeos"
+  }
+}
