@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace NativeHelloBridge 
+namespace Dioeos.UnityAppleReplayKit 
 {
   public static class NativeHello 
   {

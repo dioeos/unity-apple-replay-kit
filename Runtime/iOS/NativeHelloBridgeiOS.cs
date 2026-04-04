@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace NativeHelloBridge
+namespace Dioeos.UnityAppleReplayKit
 {
   internal static class NativeHelloBridgeiOS
   {
