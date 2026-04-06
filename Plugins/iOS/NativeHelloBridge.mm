@@ -1,8 +1,13 @@
 #import "NativeHelloBridge.h"
 #import <Foundation/Foundation.h>
+#import <stdlib.h>
 #import <string.h>
-#import "UnityFramework/UnityFramework.h"
+
+#if __has_include(<UnityFramework/UnityFramework-Swift.h>)
+#import <UnityFramework/UnityFramework-Swift.h>
+#else
 #import "UnityFramework-Swift.h"
+#endif
 
 bool nh_is_available(void)
 {
