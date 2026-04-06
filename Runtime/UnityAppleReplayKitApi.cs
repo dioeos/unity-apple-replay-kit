@@ -4,12 +4,30 @@ namespace Dioeos.UnityAppleReplayKit
 {
   public static class UnityAppleReplayKitApi
   {
-    public static string SayHello()
+    public static bool IsReplayKitAvailable()
     {
 #if UNITY_IOS && !UNITY_EDITOR
-      return NativeHelloBridgeiOS.SayHello();
+      return ReplayKitManageriOS.IsAvailable();
 #else
-      return "Not properly calling";
+      return false;
+#endif
+    }
+
+    public static bool StartRecording()
+    {
+#if UNITY_IOS && !UNITY_EDITOR
+      return ReplayKitManageriOS.StartRecording();
+#else
+      return false;
+#endif
+    }
+
+    public static bool StopRecording()
+    {
+#if UNITY_IOS && !UNITY_EDITOR
+      return ReplayKitManageriOS.StopRecording();
+#else
+      return false;
 #endif
     }
   }
